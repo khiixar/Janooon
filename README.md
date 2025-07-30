@@ -4,7 +4,7 @@ A modern website for Janoon, a Pakistani-American cafe located in Brooklyn, NY.
 
 ## About
 
-Janoon combines traditional Pakistani hospitality with premium coffee craftsmanship. Since 2018, we've been serving our community with authentic flavors, fresh halal ingredients, and recipes passed down through generations.
+Janoon combines traditional Pakistani hospitality with premium coffee craftsmanship. We've been serving our community with authentic flavors, fresh halal ingredients, and recipes passed down through generations.
 
 ## Features
 
@@ -24,13 +24,13 @@ Janoon combines traditional Pakistani hospitality with premium coffee craftsmans
 
 📍 1950 Bath Ave, Brooklyn, NY 11214  
 📞 (347) 312-5279  
-⏰ Open 11 AM - 11 PM daily
+⏰ Open 11 AM - 11 PM daily - (Subject To Change)
 
 ## Tech Stack
 
 - HTML5
 - CSS3 with Tailwind CSS
-- JavaScript
+- JavaScript (Very Little)
 - PowerShell server for local development
 
 *Bringing authentic Pakistani flavors to Brooklyn, one cup at a time.*
