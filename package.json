@@ -1,0 +1,14 @@
+{
+  "name": "janoon-restaurant",
+  "version": "1.0.0",
+  "description": "Janoon Restaurant Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "bash build.sh",
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": ["restaurant", "website", "static"],
+  "author": "Janoon Restaurant",
+  "license": "MIT"
+}
