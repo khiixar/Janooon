@@ -101,6 +101,18 @@
             animation: float 3s ease-in-out infinite;
         }
         
+        @media (max-width: 768px) {
+            .pakistan-crescent {
+                font-size: 1.2em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .pakistan-crescent {
+                font-size: 1em;
+            }
+        }
+        
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-5px); }
@@ -117,9 +129,16 @@
         .pakistan-decoration {
             position: absolute;
             color: rgba(1, 65, 28, 0.1);
-            font-size: 2rem;
+            font-size: 1.5rem;
             animation: twinkle 2s ease-in-out infinite alternate;
             pointer-events: none;
+        }
+        
+        @media (max-width: 768px) {
+            .pakistan-decoration {
+                font-size: 1rem;
+                opacity: 0.5;
+            }
         }
         
         @keyframes twinkle {
@@ -410,7 +429,7 @@
                 🇵🇰 PAKISTAN INDEPENDENCE DAY - AUG 14TH 🇵🇰
             </p>
             <p class="text-base md:text-lg font-bold urdu-text mt-1">
-                Jashne Azadi - 78 Years of Freedom & Pride
+                Jashne Azaadi - 78 Years of Freedom & Pride
             </p>
             
             <!-- Subtle hover hint text -->
@@ -421,9 +440,9 @@
             </div>
             
             <!-- Hidden button that appears on hover -->
-            <a href="menu.html#azadi-menu" class="azadi-banner-button">
+            <a href="menu.html#azaadi-menu" class="azadi-banner-button">
                 <span class="pakistan-crescent">☪</span>
-                View Azadi Menu
+                View Azaadi Menu
                 <span class="pakistan-crescent">☪</span>
             </a>
         </div>

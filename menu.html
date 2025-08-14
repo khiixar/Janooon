@@ -214,6 +214,18 @@
             animation: float 3s ease-in-out infinite;
         }
         
+        @media (max-width: 768px) {
+            .pakistan-crescent {
+                font-size: 1.2em;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .pakistan-crescent {
+                font-size: 1em;
+            }
+        }
+        
         @keyframes float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-5px); }
@@ -230,9 +242,16 @@
         .pakistan-decoration {
             position: absolute;
             color: rgba(1, 65, 28, 0.1);
-            font-size: 2rem;
+            font-size: 1.5rem;
             animation: twinkle 2s ease-in-out infinite alternate;
             pointer-events: none;
+        }
+        
+        @media (max-width: 768px) {
+            .pakistan-decoration {
+                font-size: 1rem;
+                opacity: 0.5;
+            }
         }
         
         @keyframes twinkle {
@@ -419,7 +438,7 @@
                 🇵🇰 PAKISTAN INDEPENDENCE DAY - AUG 14TH 🇵🇰
             </p>
             <p class="text-base md:text-lg font-bold urdu-text mt-1">
-                Jashne Azadi - 78 Years of Freedom & Pride
+                Jashne Azaadi - 78 Years of Freedom & Pride
             </p>
             
             <!-- Subtle hover hint text -->
@@ -430,9 +449,9 @@
             </div>
             
             <!-- Hidden button that appears on hover -->
-            <a href="#azadi-menu" class="azadi-banner-button">
+            <a href="#azaadi-menu" class="azadi-banner-button">
                 <span class="pakistan-crescent">☪</span>
-                View Azadi Menu
+                View Azaadi Menu
                 <span class="pakistan-crescent">☪</span>
             </a>
         </div>
@@ -466,20 +485,20 @@
         </div>
     </div>
 
-    <!-- Azadi Menu Modal -->
-    <div id="azadiMenuModal" class="modal">
-        <span class="close" onclick="closeAzadiMenuModal()">&times;</span>
+    <!-- Azaadi Menu Modal -->
+    <div id="azaadiMenuModal" class="modal">
+        <span class="close" onclick="closeAzaadiMenuModal()">&times;</span>
         <div class="modal-content">
-            <img id="modalAzadiMenuImage" src="Photos/azadimenu.png" alt="Azadi Special Menu - Full Size">
+            <img id="modalAzaadiMenuImage" src="Photos/azadimenu.png" alt="Azaadi Special Menu - Full Size">
         </div>
     </div>
 
-    <!-- Azadi Special Menu -->
-    <section id="azadi-menu" class="py-16 px-6 azadi-section menu-category">
+    <!-- Azaadi Special Menu -->
+    <section id="azaadi-menu" class="py-16 px-6 azadi-section menu-category">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-12">
                 <h2 class="text-4xl md:text-5xl font-bold mb-4 playfair azadi-title">
-                    ☪ AZADI SPECIAL MENU ☪
+                    ☪ AZAADI SPECIAL MENU ☪
                 </h2>
                 <p class="text-lg md:text-xl metallic-gold-text max-w-3xl mx-auto mb-6">
                     🇵🇰 Celebrating Pakistan's Independence with Special Flavors & Traditional Delights 🇵🇰
@@ -490,7 +509,7 @@
             </div>
             
             <div class="flex justify-center">
-                <div class="text-center cursor-pointer" onclick="openAzadiMenuModal()">
+                <div class="text-center cursor-pointer" onclick="openAzaadiMenuModal()">
                     <img src="Photos/azadimenu.png" alt="Azadi Special Menu" class="w-96 h-[28rem] object-cover rounded-lg gold-border border-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 azadi-menu-image">
                 </div>
             </div>
@@ -1157,14 +1176,14 @@
             document.body.style.overflow = 'auto'; // To Restore scrolling
         }
 
-        // Azadi Menu Modal Functions
-        function openAzadiMenuModal() {
-            document.getElementById('azadiMenuModal').style.display = 'block';
+        // Azaadi Menu Modal Functions
+        function openAzaadiMenuModal() {
+            document.getElementById('azaadiMenuModal').style.display = 'block';
             document.body.style.overflow = 'hidden'; // To Prevent background scrolling
         }
 
-        function closeAzadiMenuModal() {
-            document.getElementById('azadiMenuModal').style.display = 'none';
+        function closeAzaadiMenuModal() {
+            document.getElementById('azaadiMenuModal').style.display = 'none';
             document.body.style.overflow = 'auto'; // To Restore scrolling
         }
 
@@ -1175,10 +1194,10 @@
             }
         });
 
-        // Close Azadi modal when user clicks outside of image
-        document.getElementById('azadiMenuModal').addEventListener('click', function(event) {
+        // Close Azaadi modal when user clicks outside of image
+        document.getElementById('azaadiMenuModal').addEventListener('click', function(event) {
             if (event.target === this) {
-                closeAzadiMenuModal();
+                closeAzaadiMenuModal();
             }
         });
 
@@ -1186,7 +1205,7 @@
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {
                 closeMenuModal();
-                closeAzadiMenuModal();
+                closeAzaadiMenuModal();
             }
         });
     </script>
