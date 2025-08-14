@@ -1,0 +1,20 @@
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "CafeOrCoffeeShop",
+"name": "Janooon Cafe",
+"image": "https://www.janoooncafe.com/images/your-image.jpg",
+"telephone": "347-312-5279",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "1950 Bath Ave",
+"addressLocality": "Brooklyn",
+"addressRegion": "NY",
+"postalCode": "11214",
+"addressCountry": "US"
+},
+"url": "https://www.janoooncafe.com",
+"servesCuisine": "Pakistani",
+"openingHours": "Mo-Su 08:00-20:00"
+}
+</script>

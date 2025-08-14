@@ -1,0 +1,727 @@
+<!-- MAKE SURE YOU SAVE A COPY BEFORE EDITING ANY FILE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janooon</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="timestamp" content="2025-07-27T07:58:00Z">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Janooon Cafe",
+    "image": "https://www.janoooncafe.com/Photos/logo2.png",
+    "telephone": "347-312-5279",
+    "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1950 Bath Ave",
+    "addressLocality": "Brooklyn",
+    "addressRegion": "NY",
+    "postalCode": "11214",
+    "addressCountry": "US"
+    },
+    "url": "https://www.janoooncafe.com",
+    "servesCuisine": "Pakistani",
+    "openingHours": ["Mo-Th 11:00-23:00", "Fr-Su 11:00-24:00"]
+    }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&family=Amiri:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000000;
+            color: #DAA520;
+            overflow-x: hidden;
+        }
+        
+        /* Pakistani Independence Day Styles */
+        .pakistan-banner {
+            background: linear-gradient(135deg, #01411c 0%, #ffffff 20%, #ffffff 80%, #01411c 100%);
+            border: 3px solid #01411c;
+            animation: patrioticPulse 4s ease-in-out infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pakistan-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(1, 65, 28, 0.1) 0%, transparent 50%);
+            animation: rotate 20s linear infinite;
+        }
+        
+        .pakistan-flag-text {
+            color: #01411c;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8), -1px -1px 2px rgba(1, 65, 28, 0.3);
+            position: relative;
+            z-index: 2;
+        }
+        
+        @keyframes patrioticPulse {
+            0%, 100% { box-shadow: 0 0 15px rgba(1, 65, 28, 0.6); }
+            50% { box-shadow: 0 0 30px rgba(1, 65, 28, 0.9), 0 0 45px rgba(255, 255, 255, 0.5); }
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .green-accent {
+            color: #01411c;
+        }
+        
+        .pakistan-star {
+            color: #01411c;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+            font-size: 1.2em;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pakistan-crescent {
+            color: #01411c;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .urdu-text {
+            color: #01411c;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9), -1px -1px 2px rgba(1, 65, 28, 0.5);
+            position: relative;
+            z-index: 2;
+        }
+        
+        .pakistan-decoration {
+            position: absolute;
+            color: rgba(1, 65, 28, 0.1);
+            font-size: 2rem;
+            animation: twinkle 2s ease-in-out infinite alternate;
+            pointer-events: none;
+        }
+        
+        @keyframes twinkle {
+            0% { opacity: 0.3; transform: scale(1); }
+            100% { opacity: 0.7; transform: scale(1.1); }
+        }
+        
+        .azadi-menu-btn {
+            background: linear-gradient(135deg, #01411c 0%, #ffffff 50%, #01411c 100%);
+            color: #01411c;
+            border: 2px solid #01411c;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(1, 65, 28, 0.4);
+            position: relative;
+            z-index: 3;
+            overflow: hidden;
+        }
+        
+        .azadi-menu-btn:hover {
+            background: linear-gradient(135deg, #ffffff 0%, #01411c 50%, #ffffff 100%);
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(1, 65, 28, 0.8);
+            box-shadow: 0 6px 20px rgba(1, 65, 28, 0.6);
+        }
+
+        
+        .hero-section {
+            background-image: url('./Photos/behind logo.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            opacity: 1;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        @keyframes shimmer {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.8; }
+        }
+        
+        .gold-border {
+            border-color: #DAA520;
+            box-shadow: 0 0 10px rgba(218, 165, 32, 0.4);
+        }
+        
+        .gold-bg {
+            background: linear-gradient(135deg, #FFD700 0%, #DAA520 50%, #B8860B 100%);
+            color: #2F1B14;
+            text-shadow: none;
+            box-shadow: 0 4px 15px rgba(218, 165, 32, 0.4);
+        }
+        
+        .shiny-gold-text {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #DAA520 50%, #B8860B 75%, #8B6914 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+            filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.8));
+        }
+        
+        .premium-gold-text {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #DAA520 50%, #B8860B 75%, #8B6914 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+            filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.8));
+        }
+        
+        .gold-text {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #DAA520 50%, #B8860B 75%, #8B6914 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+            filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.8));
+        }
+        
+        .black-bg {
+            background: #000000;
+            border: 1px solid rgba(218, 165, 32, 0.2);
+        }
+        
+        .south-asian-font {
+            font-family: 'Amiri', serif;
+        }
+        
+        .decorative-border {
+            border: 2px solid;
+            border-image: linear-gradient(45deg, #ffd700, #ffed4e, #ffd700) 1;
+            position: relative;
+        }
+        
+        .decorative-border::before {
+            content: '✦';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #000000;
+            color: #DAA520;
+            font-size: 16px;
+            padding: 0 8px;
+        }
+        
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+        }
+        
+        .coffee-icon {
+            display: inline-block;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 25%, #DAA520 50%, #B8860B 75%, #8B6914 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 10px rgba(218, 165, 32, 0.3);
+            filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.8));
+        }
+        
+        /* Logo Styles */
+        .logo-img {
+            height: 48px;
+            width: auto;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+            transition: all 0.3s ease;
+        }
+        
+        .logo-img:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(3px 3px 6px rgba(218, 165, 32, 0.6));
+        }
+        
+        .hero-logo {
+            height: 120px;
+            width: auto;
+            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.7));
+            transition: all 0.3s ease;
+        }
+        
+        .hero-logo:hover {
+            transform: scale(1.02);
+            filter: drop-shadow(6px 6px 12px rgba(218, 165, 32, 0.8));
+        }
+        
+        .footer-logo {
+            height: 60px;
+            width: auto;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.5));
+        }
+        
+        /* Azadi Banner Button Styles */
+        .pakistan-banner {
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        
+        .pakistan-banner::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            width: 4px;
+            height: 4px;
+            background: rgba(1, 65, 28, 0.4);
+            border-radius: 50%;
+            animation: subtlePulse 3s ease-in-out infinite;
+            z-index: 3;
+        }
+        
+        @keyframes subtlePulse {
+            0%, 100% { 
+                opacity: 0.3;
+                transform: scale(1);
+            }
+            50% { 
+                opacity: 0.8;
+                transform: scale(1.3);
+            }
+        }
+        
+        .pakistan-banner:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px rgba(1, 65, 28, 0.8), 0 0 50px rgba(255, 255, 255, 0.4);
+        }
+        
+        .pakistan-banner:hover::after {
+            opacity: 0;
+        }
+        
+        .azadi-banner-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #01411c 0%, #ffffff 50%, #01411c 100%);
+            color: #01411c;
+            border: 2px solid #01411c;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(1, 65, 28, 0.4);
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .pakistan-banner:hover .azadi-banner-button {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+        
+        .azadi-banner-button:hover {
+            background: linear-gradient(135deg, #ffffff 0%, #01411c 50%, #ffffff 100%);
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(1, 65, 28, 0.8);
+            box-shadow: 0 6px 20px rgba(1, 65, 28, 0.6);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="black-bg border-b gold-border py-4 px-6 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="flex items-center">
+                    <img src="Photos/logo2.png" alt="Janooon Cafe" class="logo-img">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="gold-text hover:text-white transition">Home</a>
+                <a href="#about" class="gold-text hover:text-white transition">About</a>
+                <a href="#menu" class="gold-text hover:text-white transition">Menu</a>
+                <a href="#gallery" class="gold-text hover:text-white transition">Gallery</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="gold-text text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden black-bg py-4 px-6 border-t gold-border">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="gold-text hover:text-white transition">Home</a>
+                <a href="#about" class="gold-text hover:text-white transition">About</a>
+                <a href="#menu" class="gold-text hover:text-white transition">Menu</a>
+                <a href="#gallery" class="gold-text hover:text-white transition">Gallery</a>
+                <a href="menu.html" class="gold-text hover:text-white transition">Full Menu</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Pakistani Independence Day Banner -->
+    <div class="pakistan-banner py-5 px-6 text-center relative z-40 rounded-lg mx-4 mb-2">
+        <div class="container mx-auto flex flex-col justify-center items-center gap-3">
+            <div class="pakistan-decoration" style="top: 10%; left: 5%;">☪</div>
+            <div class="pakistan-decoration" style="top: 20%; right: 8%;">✦</div>
+            <div class="pakistan-decoration" style="bottom: 15%; left: 10%;">☪</div>
+            <div class="pakistan-decoration" style="bottom: 10%; right: 5%;">✦</div>
+            
+            <h3 class="text-2xl md:text-3xl font-bold south-asian-font urdu-text mb-2 flex items-center">
+                <span class="pakistan-crescent mr-2">☪</span> جشنِ آزادی مبارک <span class="pakistan-crescent ml-2">☪</span>
+            </h3>
+            <p class="text-lg md:text-xl font-semibold pakistan-flag-text">
+                🇵🇰 PAKISTAN INDEPENDENCE DAY - AUG 14TH 🇵🇰
+            </p>
+            <p class="text-base md:text-lg font-bold urdu-text mt-1">
+                Jashne Azadi - 78 Years of Freedom & Pride
+            </p>
+            
+            <!-- Subtle hover hint text -->
+            <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 z-3">
+                <p class="text-xs text-green-800 opacity-60 font-medium animate-pulse">
+                    hover for special menu ✨
+                </p>
+            </div>
+            
+            <!-- Hidden button that appears on hover -->
+            <a href="menu.html#azadi-menu" class="azadi-banner-button">
+                <span class="pakistan-crescent">☪</span>
+                View Azadi Menu
+                <span class="pakistan-crescent">☪</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center text-center py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="flex justify-center mb-6">
+                <img src="Photos/logo2.png" alt="Janooon Cafe" class="hero-logo">
+            </div>
+            <p class="text-xl md:text-2xl mb-8 shiny-gold-text">Authentic flavors, modern vibes</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <video 
+                        src="./Photos/our story.mp4" 
+                        alt="Our Story" 
+                        class="rounded-lg shadow-xl gold-border border-2 w-full"
+                        controls
+                        autoplay
+                        muted
+                        loop
+                    >
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 south-asian-font gold-text">ہماری کہانی - Our Story</h2>
+                    <p class="mb-4 text-gray-300">Janooon Café was born from a little dream that drifted between the streets of Islamabad and the spirit of Brooklyn—a craving for chai that felt like home, snacks that sparked nostalgia, and a space where people could slow down and connect. Our family-run café blends South Asian street favorites with modern café classics—like spiced lattes, minty mojitos, and bold gola gandas—served in a cozy, playful space that invites you to stay awhile. "Janooon" means passion—and it's at the heart of every flavor, every detail, and every smile we share.</p>
+                    <p class="mb-6 text-gray-300"><strong>"Janooon hai toh raaste khud ban jaate hain,<br><br>Warna irade bhi kabhi kabhi thak jaate hain."</strong></p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center gold-text">
+                            <i class="fas fa-coffee text-2xl mr-2"></i>
+                            <span>Traditional Blends</span>
+                        </div>
+                        <div class="flex items-center gold-text">
+                            <i class="fas fa-heart text-2xl mr-2"></i>
+                            <span>Halal & Fresh</span>
+                        </div>
+                        <div class="flex items-center gold-text">
+                            <i class="fas fa-users text-2xl mr-2"></i>
+                            <span>Family Oriented</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu" class="py-20 px-6 black-bg relative">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 playfair gold-text">Our Menu</h2>
+                <p class="text-xl gold-text max-w-2xl mx-auto">A selection of our most popular items</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Chai/Tea Items -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden gold-border border menu-item transition duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold gold-text">GULABI CHAI</h3>
+                            <span class="gold-text font-bold">$4</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Pink Tea</p>
+                        <div class="gold-text flex items-center">
+                            <i class="fas fa-heart mr-2 text-pink-400"></i>
+                            <span>Traditional</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg overflow-hidden gold-border border menu-item transition duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold gold-text">ANDY WALA BURGER</h3>
+                            <span class="gold-text font-bold">$6</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Signature slider with authentic flavors</p>
+                        <div class="gold-text flex items-center">
+                            <i class="fas fa-hamburger mr-2 text-yellow-600"></i>
+                            <span>Signature</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg overflow-hidden gold-border border menu-item transition duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold gold-text">GOL GAPPY</h3>
+                            <span class="gold-text font-bold">$7</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Traditional street food delight</p>
+                        <div class="gold-text flex items-center">
+                            <i class="fas fa-circle mr-2"></i>
+                            <span>Crispy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food Items -->
+                <div class="bg-gray-900 rounded-lg overflow-hidden gold-border border menu-item transition duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold gold-text">LAVA CAKE</h3>
+                            <span class="gold-text font-bold">$6</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Warm & gooey chocolate delight</p>
+                        <div class="gold-text flex items-center">
+                            <i class="fas fa-birthday-cake mr-2"></i>
+                            <span>Dessert</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg overflow-hidden gold-border border menu-item transition duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold gold-text">MASALA FRIES</h3>
+                            <span class="gold-text font-bold">$4</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Crispy fries with aromatic spices</p>
+                        <div class="gold-text flex items-center">
+                            <i class="fas fa-fire mr-2"></i>
+                            <span>Spiced</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg overflow-hidden gold-border border menu-item transition duration-300">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold gold-text">KARAK CHAI</h3>
+                            <span class="gold-text font-bold">$4</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Strong traditional chai blend</p>
+                        <div class="gold-text flex items-center">
+                            <i class="fas fa-fire mr-2 text-red-600"></i>
+                            <span>Strong</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="menu.html" class="gold-bg black-text px-8 py-3 rounded-full font-medium hover:bg-yellow-600 transition inline-block">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 playfair gold-text">Gallery</h2>
+                <p class="text-xl gold-text max-w-2xl mx-auto">A glimpse into the Janooon experience</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+                <div class="overflow-hidden rounded-lg gold-border border-2">
+                    <img src="./Photos/IMG_5411.jpg" alt="Gallery Image" class="w-full h-48 sm:h-52 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg gold-border border-2">
+                    <img src="./Photos/IMG_5463.jpg" alt="Gallery Image" class="w-full h-48 sm:h-52 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg gold-border border-2">
+                    <img src="./Photos/IMG_5505.jpg" alt="Gallery Image" class="w-full h-48 sm:h-52 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg gold-border border-2">
+                    <img src="./Photos/IMG_5515.jpg" alt="Gallery Image" class="w-full h-48 sm:h-52 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg gold-border border-2">
+                    <img src="./Photos/IMG_5563.jpg" alt="Gallery Image" class="w-full h-48 sm:h-52 object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-lg gold-border border-2">
+                    <img src="./Photos/IMG_5610.jpg" alt="Gallery Image" class="w-full h-48 sm:h-52 object-cover hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hours & Location -->
+    <section class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 playfair gold-text">Hours</h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b gold-border pb-2">
+                            <span class="gold-text">Monday</span>
+                            <span class="text-gray-300">11:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="flex justify-between border-b gold-border pb-2">
+                            <span class="gold-text">Tuesday</span>
+                            <span class="text-gray-300">11:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="flex justify-between border-b gold-border pb-2">
+                            <span class="gold-text">Wednesday</span>
+                            <span class="text-gray-300">11:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="flex justify-between border-b gold-border pb-2">
+                            <span class="gold-text">Thursday</span>
+                            <span class="text-gray-300">11:00 AM - 11:00 PM</span>
+                        </div>
+                        <div class="flex justify-between border-b gold-border pb-2">
+                            <span class="gold-text">Friday</span>
+                            <span class="text-gray-300">11:00 AM - 12:00 AM</span>
+                        </div>
+                        <div class="flex justify-between border-b gold-border pb-2">
+                            <span class="gold-text">Saturday</span>
+                            <span class="text-gray-300">11:00 AM - 12:00 AM</span>
+                        </div>
+                        <div class="flex justify-between border-b gold-border pb-2">
+                            <span class="gold-text">Sunday</span>
+                            <span class="text-gray-300">11:00 AM - 12:00 AM</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 playfair gold-text">Location</h2>
+                    <div class="decorative-border rounded-lg overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3030.7806524785594!2d-73.99166968459473!3d40.60857157933906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2441b23d3fb6b%3A0x123456789abcdef!2s1950%20Bath%20Ave%2C%20Brooklyn%2C%20NY%2011214!5e0!3m2!1sen!2sus!4v1689872820783!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <p class="mt-4 text-gray-300">1950 Bath Ave, Brooklyn, NY 11214</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="black-bg border-t gold-border py-12 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="Photos/logo2.png" alt="Janooon Cafe" class="footer-logo">
+                    </div>
+                    <p class="text-gray-300">A Pakistani cafe in Brooklyn NY</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 gold-text">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:gold-text transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:gold-text transition">About</a></li>
+                        <li><a href="#menu" class="text-gray-300 hover:gold-text transition">Menu</a></li>
+                        <li><a href="#gallery" class="text-gray-300 hover:gold-text transition">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 gold-text">Contact</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 gold-text"></i>
+                            <span>1950 Bath Ave, Brooklyn, NY 11214</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 gold-text"></i>
+                            <span>(347) 312-5279</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 gold-text"></i>
+                            <span>contact@janoooncafe.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4 gold-text">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/janooon_cafe?igsh=MXhwaHR4bzZyanFtNg==" target="_blank" class="gold-text text-xl hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@janoooncafe3?_t=ZT-8ynvVUt1ESc&_r=1" target="_blank" class="gold-text text-xl hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t gold-border mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Janooon Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
