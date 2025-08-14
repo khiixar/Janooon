@@ -335,6 +335,17 @@
             box-shadow: 0 6px 20px rgba(1, 65, 28, 0.6);
         }
         
+        /* Hide Pakistani Independence Day elements on mobile except azadi menu */
+        @media (max-width: 768px) {
+            .pakistan-banner {
+                display: none !important;
+            }
+            
+            .pakistan-decoration {
+                display: none !important;
+            }
+        }
+        
         /* Azadi Menu Section Styles */
         .azadi-section {
             background: linear-gradient(135deg, #000000 0%, #01411c 10%, #000000 90%);
