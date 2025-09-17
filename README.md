@@ -34,3 +34,4 @@ Janoon combines traditional Pakistani hospitality with premium coffee craftsmans
 - PowerShell server for local development
 
 *Bringing authentic Pakistani flavors to Brooklyn, one cup at a time.*
+          © 2025 Janooon Cafe. All rights reserved.
