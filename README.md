@@ -1,8 +1,8 @@
-© 2025 Senyo Solutions. All rights reserved.
+Made by Senyo Solutions. All rights reserved.
 
 # Janoon Cafe ☕
 
-A modern website for Janoon, a Pakistani-American cafe located in Brooklyn, NY. 
+A modern website for Janooon, a Pakistani-American cafe located in Brooklyn, NY. 
 
 ## About
 
