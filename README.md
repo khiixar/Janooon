@@ -3,7 +3,7 @@ Made by Senyo Solutions. All rights reserved.
 # Janooon Cafe ☕
 
 A modern website for Janooon, a Pakistani-American cafe located in Brooklyn, NY. 
-
+https://janoooncafe.com/
 ## About
 
 Janoon combines traditional Pakistani hospitality with premium coffee craftsmanship. We've been serving our community with authentic flavors, fresh halal ingredients, and recipes passed down through generations.
