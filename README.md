@@ -1,6 +1,6 @@
 Made by Senyo Solutions. All rights reserved.
 
-# Janoon Cafe ☕
+# Janooon Cafe ☕
 
 A modern website for Janooon, a Pakistani-American cafe located in Brooklyn, NY. 
 
